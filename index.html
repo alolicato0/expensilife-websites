@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ExpensiLife — La tua trasferta in tasca</title>
+  <meta name="description" content="ExpensiLife: gestisci spese, tragitti e rendiconti delle tue trasferte aziendali. OCR ricevute, multi-valuta, rimborso km automatico." />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #f5f7fa;
+      color: #2C3E50;
+      line-height: 1.5;
+    }
+    .container { max-width: 920px; margin: 0 auto; padding: 24px; }
+    header { padding: 48px 24px 24px; text-align: center; }
+    .brand { font-size: 28px; font-weight: 800; color: #0A2A52; letter-spacing: -0.3px; }
+    .tagline { color: #6b7280; margin-top: 6px; font-size: 16px; }
+    .hero {
+      background: linear-gradient(135deg, #0A2A52 0%, #1A4D8C 100%);
+      color: #fff;
+      border-radius: 18px;
+      padding: 40px 32px;
+      margin-top: 32px;
+      text-align: center;
+      box-shadow: 0 6px 24px rgba(10, 42, 82, 0.12);
+    }
+    .hero h1 { margin: 0 0 10px; font-size: 28px; }
+    .hero p { margin: 0; opacity: 0.9; font-size: 15px; max-width: 560px; margin-inline: auto; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .card h3 { margin: 0 0 6px; font-size: 16px; color: #0A2A52; }
+    .card p { margin: 0; font-size: 14px; color: #4b5563; }
+    nav.legal {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+    }
+    nav.legal a { color: #1A4D8C; margin: 0 10px; text-decoration: none; }
+    nav.legal a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 48px;
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #95a5a6;
+      border-top: 1px solid #e5e7eb;
+    }
+    footer a { color: #95a5a6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">ExpensiLife</div>
+      <div class="tagline">📍 La tua trasferta in...tasca!</div>
+    </header>
+
+    <section class="hero">
+      <h1>Gestisci spese e trasferte aziendali in pochi tap</h1>
+      <p>Scatta lo scontrino, l'app legge automaticamente l'importo. Calcola km e rimborso. Genera rendiconti via email pronti per l'ufficio.</p>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <h3>📸 OCR ricevute</h3>
+        <p>Scansiona, estrai automaticamente importo e data.</p>
+      </div>
+      <div class="card">
+        <h3>🚗 Rimborso km</h3>
+        <p>Imposta la tua tariffa, il calcolo è istantaneo.</p>
+      </div>
+      <div class="card">
+        <h3>💱 Multi-valuta</h3>
+        <p>41 valute supportate con tassi BCE in tempo reale.</p>
+      </div>
+      <div class="card">
+        <h3>📧 Report via email</h3>
+        <p>PDF + ricevute allegate, pronti per l'amministrazione.</p>
+      </div>
+    </section>
+
+    <nav class="legal">
+      <a href="privacy.html">Privacy Policy</a>
+      <span style="color:#cbd5e1">·</span>
+      <a href="terms.html">Termini di servizio</a>
+      <span style="color:#cbd5e1">·</span>
+      <a href="mailto:support@expensilife.org">support@expensilife.org</a>
+    </nav>
+
+    <footer>
+      <p>&copy; 2026 ExpensiLife · Alberto Lolicato</p>
+      <p>Sede: Ariccia (RM), Italia · CF: LLCLRT92R20C351C</p>
+    </footer>
+  </div>
+</body>
+</html>

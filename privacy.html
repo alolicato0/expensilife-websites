@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — ExpensiLife</title>
+  <meta name="description" content="Informativa privacy ExpensiLife (GDPR)." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #f5f7fa;
+      color: #2C3E50;
+      line-height: 1.65;
+    }
+    .container { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+    .topbar {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 24px;
+    }
+    .brand { font-size: 18px; font-weight: 800; color: #0A2A52; text-decoration: none; }
+    .topbar nav a { color: #1A4D8C; margin-left: 16px; font-size: 14px; text-decoration: none; }
+    .topbar nav a:hover { text-decoration: underline; }
+    article {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+    h1 { font-size: 26px; color: #0A2A52; margin: 0 0 8px; }
+    h2 { font-size: 20px; color: #0A2A52; margin: 32px 0 8px; }
+    h3 { font-size: 16px; color: #1A4D8C; margin: 20px 0 6px; }
+    h4 { font-size: 14px; color: #2C3E50; margin: 16px 0 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+    p, li { font-size: 15px; }
+    a { color: #1A4D8C; }
+    code { background: #f1f5f9; padding: 1px 4px; border-radius: 4px; font-size: 13px; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f9fafb; font-weight: 600; }
+    blockquote {
+      border-left: 3px solid #1A4D8C;
+      margin: 16px 0;
+      padding: 8px 16px;
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 14px;
+    }
+    hr { border: 0; border-top: 1px solid #e5e7eb; margin: 32px 0; }
+    #content { white-space: normal; }
+    .meta {
+      color: #6b7280;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <a href="index.html" class="brand">ExpensiLife</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="terms.html">Termini</a>
+      </nav>
+    </div>
+    <article>
+      <div id="content">Caricamento informativa...</div>
+    </article>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch('PRIVACY.md')
+      .then(r => r.text())
+      .then(md => {
+        document.getElementById('content').innerHTML = marked.parse(md);
+      })
+      .catch(err => {
+        document.getElementById('content').innerHTML =
+          '<p>Errore nel caricamento dell\'informativa. Contatta <a href="mailto:support@expensilife.org">support@expensilife.org</a>.</p>';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
