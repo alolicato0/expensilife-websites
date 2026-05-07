@@ -152,6 +152,7 @@ principali sono:
 | **Google LLC — Gemini API** | OCR/AI per scansione ricevute | USA — adesione SCC + DPF |
 | **Google LLC — Maps Platform** | Geocoding e calcolo distanze tragitti | USA — adesione SCC + DPF |
 | **Google LLC — AdMob** | Visualizzazione pubblicità (utenti Free) | USA — adesione SCC + DPF |
+| **Google LLC — Identity / OAuth** | Autenticazione "Continua con Google" (verifica id_token: email, nome, foto profilo) | USA — adesione SCC + DPF |
 | **Brevo** (Sendinblue SAS) | Invio email transazionali (rendiconti) | UE (Francia) |
 | **RevenueCat** (RevenueCat Inc.) | Gestione abbonamenti in-app | USA — adesione SCC + DPF |
 | **Apple Inc.** | App Store, in-app purchase iOS | USA |
